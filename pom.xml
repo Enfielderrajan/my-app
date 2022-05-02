@@ -30,6 +30,11 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+                        <groupId>org.sonarsource.scanner.maven</groupId>
+                        <artifactId>sonar-maven-plugin</artifactId>
+                        <version>3.6.0.1398</version>
+                </dependency>
 	
 	</dependencies>
 	<distributionManagement>
@@ -54,12 +59,7 @@
                 <source>1.7</source>
                 <target>1.7</target>
             </configuration>
-        </plugin>
-	     <plugin>    
-                 <groupId>org.sonarsource.scanner.maven</groupId>
-                 <artifactId>sonar-maven-plugin</artifactId>
-	         <version>6.7.6</version>
-	</plugin>        
+        </plugin>        
 	<plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-surefire-plugin</artifactId>
